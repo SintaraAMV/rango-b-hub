@@ -1,98 +1,67 @@
-# Rango B
+# Rango B — Sintara Studios
 
-Rango B is a collection of small, clearly scoped digital services focused on solving concrete technical problems with verifiable results.
+**Focused technical services for existing web applications.**
 
-The system is currently in pre-launch development and internal validation.
+Rango B is a small-service line of [Sintara Studios](https://sintaraamv.github.io/sintara-studios-web/). Its purpose is to help founders and small teams resolve specific software problems through a bounded scope, observable results, and documented handover.
 
-## Current Service
+**Status (November 2026): pre-launch / internal validation.** The repositories below contain real, reproducible *technical demonstrations*, not paid client work. Commercial demand, pricing, and delivery with external clients have not yet been validated.
 
-### Bugfix Express
+## Services and launch pricing
 
-A focused service for diagnosing and fixing a bounded software defect in an existing application.
+| Service | Suitable situation | Launch price |
+| --- | --- | --- |
+| **Technical Diagnosis** | A problem exists, but the right intervention cannot yet be scoped responsibly. | **USD 59** |
+| **Bugfix Express** | One bounded, reproducible defect in an otherwise coherent application. | **USD 79–149** (typical **USD 99**) |
+| **Deploy Express** | A working application needs a small, verifiable deployment to a defined environment. | **USD 59** |
+| **AI App Rescue** | An AI-assisted application has multiple blockers or has become unstable and difficult to control. | **From USD 249** |
+| **Production Ready** | A functioning MVP needs a clearly scoped readiness pass before real users. | **From USD 299** |
 
-Typical workflow:
+These are **launch price hypotheses**, not fixed quotes for arbitrary projects. A written scope determines the deliverables, exclusions, acceptance criteria, external costs, timeline, and commercial terms. Diagnosis is **not** a mandatory prerequisite when the work is already sufficiently defined.
 
-`Reproduce → Isolate → Root Cause → Minimal Fix → Tests → Validation → Delivery`
+### What the service boundaries mean
 
-The goal is not to rewrite an application, but to identify the actual cause of a specific defect, apply the smallest reasonable correction, and verify that the affected flow works correctly.
+- **Diagnosis** establishes evidence and a recommended next action; it does not promise a fix.
+- **Bugfix** addresses a specific defect; it does not include a broad rewrite.
+- **Deploy** publishes a sufficiently working app; significant debugging and production hardening are separate.
+- **AI App Rescue** stabilizes an agreed set of problems; the starting price is **not** an unlimited rescue.
+- **Production Ready** starts with a fundamentally working MVP; it is not a substitute for first stabilizing a broken application.
 
-## Technical Demos
+We do not promise that every technology, risk level, or project size can be accepted. Work is evaluated before a commitment is made.
 
-Two Bugfix Express demonstrations are currently available.
+## Reproducible technical demonstrations
 
-### Demo 01 — Basic
+| Service | Repository | Internal evidence and limits |
+| --- | --- | --- |
+| Bugfix Express — basic | [Bugfix demo 01](https://github.com/SintaraAMV/rango-b-bugfix-demo-basic) | Reproduction, minimal correction, and regression checks for an optional-coupon defect. |
+| Bugfix Express — realistic | [Bugfix demo 02](https://github.com/SintaraAMV/rango-b-bugfix-demo-realistic) | React/Node/SQLite stale-state defect; BEFORE/AFTER tests and evidence. An internal end-to-end service simulation is also documented separately. |
+| Technical Diagnosis | [Diagnostic demo](https://github.com/SintaraAMV/rango-b-diagnostic-demo-03) | Focused investigation with evidence and a supported root-cause conclusion. |
+| Deploy Express | [Deploy demo](https://github.com/SintaraAMV/rango-b-deploy-demo) | Deployment checks within the demonstration's defined environment. |
+| AI App Rescue | [Rescue demo](https://github.com/SintaraAMV/rango-b-ai-rescue-demo) | Controlled recovery case with evidence of identified blockers and corrections. |
+| Production Ready | [Production demo](https://github.com/SintaraAMV/rango-b-production-ready-demo) | Readiness exercise with a **conditional GO** for its release candidate; final external-provider evidence remains outside the demonstrated scope. |
 
-A small controlled case used to validate the fundamental Bugfix Express workflow.
+The demonstrations were built to test technical workflows. They do **not** establish client satisfaction, third-party reviews, production readiness beyond their explicit test conditions, or commercial sales.
 
-**Problem:** order creation failed when an optional coupon code was omitted.
+## How a small engagement works
 
-**Result:** the root cause was isolated, a minimal fix was implemented, and regression tests confirmed both the corrected case and the previously working coupon flow.
+1. **Request and triage:** describe the application, problem, desired result, and constraints.
+2. **Scope and agreement:** define deliverables, exclusions, price, acceptance tests, timeline, access, and payment arrangements.
+3. **Authorized execution:** use minimum necessary access; reproduce, investigate, change, and validate within the agreed scope.
+4. **Handover:** provide the change or findings, relevant test evidence, limitations, and next steps.
 
-Repository:
+An AI tool may assist investigation or implementation. A claim of success must still be supported by appropriate tests or observable behavior. An executed test is not automatically a valid test or proof of every acceptance criterion.
 
-https://github.com/SintaraAMV/rango-b-bugfix-demo-basic
+## Internal validation status
+
+- **Technical demos:** available for all five services.
+- **Bugfix Express:** an internal end-to-end simulation has been completed; documentary cross-check remains.
+- **Diagnosis, Deploy, AI App Rescue, Production Ready:** full service simulations remain pending.
+- **External clients and reviews:** none documented at this pre-launch checkpoint.
+- **Commercial outreach, payment channels, and acquisition automation:** being prepared and verified; not presented as operational or validated.
+
+## Enquiries
+
+See the [Sintara Studios website](https://sintaraamv.github.io/sintara-studios-web/) for the current public offer and contact information. Please share a concise description of the problem and its expected result; access credentials or sensitive data should **not** be sent in an initial message.
 
 ---
 
-### Demo 02 — Realistic
-
-A more realistic application scenario designed to represent the type of debugging work that may occur in an actual client project.
-
-The demo includes:
-
-- frontend and backend interaction;
-- persistent application state;
-- a non-obvious defect;
-- multiple initially plausible hypotheses;
-- root-cause investigation;
-- minimal code correction;
-- regression testing;
-- before/after evidence.
-
-Repository:
-
-https://github.com/SintaraAMV/rango-b-bugfix-demo-realistic
-
-## Status
-
-### Bugfix Express
-
-- Operational workflow: developed
-- Basic technical demo: completed
-- Realistic technical demo: completed
-- Full client simulation: pending final validation
-
-### Other Rango B Services
-
-Planned:
-
-- Technical Diagnosis
-- Deploy Express
-
-These services will be added after their operational workflows, demos, and simulations are validated.
-
-## Principles
-
-Rango B is built around a few operating principles:
-
-- clearly bounded scope;
-- reproducible problems;
-- evidence-based debugging;
-- minimal reasonable changes;
-- technical and functional validation;
-- documented delivery;
-- no unnecessary expansion of scope.
-
-AI tools may assist analysis and implementation, but the final result is validated through execution, tests, logs, and observable application behavior.
-
-## Repository Structure
-
-This repository acts as the central index for Rango B.
-
-Individual technical demos and future service examples are maintained in separate repositories to preserve independent Git history, tests, and evidence.
-
-## Disclaimer
-
-All current examples are technical demonstrations created for internal validation and portfolio evidence.
-
-They do not represent real client projects or client data.
+*All cases shown here are synthetic/internal technical demonstrations. No real client projects, customer data, reviews, or sales are claimed.*
